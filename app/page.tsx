@@ -269,15 +269,13 @@ export default function HomePage() {
                   </div>
                 ))}
               </div>
-              <a
-                href="https://genschool.app"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-brand-school/10 border border-brand-school/20 hover:bg-brand-school/20 hover:border-brand-school/40 text-brand-school px-5 py-2.5 rounded-lg text-sm font-medium transition-all mt-6 self-start"
-              >
-                Visit genschool.app
-                <ExternalLink className="w-3.5 h-3.5" />
-              </a>
+             <a
+  href="mailto:musah@genplatform.io?subject=GenSchool%20Early%20Access"
+  className="inline-flex items-center gap-2 bg-brand-school/10 border border-brand-school/20 hover:bg-brand-school/20 hover:border-brand-school/40 text-brand-school px-5 py-2.5 rounded-lg text-sm font-medium transition-all mt-6 self-start"
+>
+  Request Early Access
+  <ArrowRight className="w-3.5 h-3.5" />
+</a>
               <div className="mt-6">
                 <SchoolDashboard />
               </div>
@@ -430,17 +428,15 @@ export default function HomePage() {
 
              <ul className="space-y-2.5">
   <li>
-    <a
-      href="https://genschool.app"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="text-xs text-text-tertiary hover:text-text-secondary transition-colors flex items-center gap-1"
-    >
-      GenSchool{" "}
-      <span className="text-[9px] text-brand-school bg-brand-school/10 px-1.5 py-0.5 rounded-full">
-        Early Access
-      </span>
-    </a>
+     <a
+    href="mailto:musah@genplatform.io?subject=GenSchool%20Early%20Access"
+    className="text-xs text-text-tertiary hover:text-text-secondary transition-colors flex items-center gap-1"
+  >
+    GenSchool{" "}
+    <span className="text-[9px] text-brand-school bg-brand-school/10 px-1.5 py-0.5 rounded-full">
+      Early Access
+    </span>
+  </a>
   </li>
   <li>
     <a

@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     "GenPlatform",
     "GenSchool",
     "GenNote",
-    "GenGuard",
+    "GenGuard AI",
     "institutional management",
     "AI transcription",
     "fraud detection",
@@ -68,13 +68,13 @@ export default function RootLayout({
       "Institutional Management Software",
       "AI Voice Transcription",
       "Fraud Detection",
+      "Receipt Verification",
     ],
     offers: [
       {
         "@type": "Offer",
         name: "GenSchool",
-        description: "Institutional management software",
-        url: "https://genschool.app",
+        description: "Institutional management software for schools",
       },
       {
         "@type": "Offer",
@@ -84,8 +84,9 @@ export default function RootLayout({
       },
       {
         "@type": "Offer",
-        name: "GenGuard",
-        description: "WhatsApp bot for fraud detection",
+        name: "GenGuard AI",
+        description:
+          "WhatsApp bot for fraud detection, KYC name verification, and receipt fraud scanning",
       },
     ],
   };

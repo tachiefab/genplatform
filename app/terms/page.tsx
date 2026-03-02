@@ -295,76 +295,126 @@ export default function TermsPage() {
             </p>
           </section>
 
-          {/* 6 */}
+          
+                    {/* 6 */}
           <section>
             <h2 className="text-xl font-semibold text-text-primary mb-4">
               6. Subscription, Payments, and Billing
             </h2>
 
             <h3 className="text-base font-semibold text-text-primary mt-4 mb-3">
-              6.1 Pricing and Plans
+              6.1 Overview
             </h3>
             <p>
-              Access to GenPlatform services may require a paid subscription.
-              Pricing, plan features, and billing cycles are published on the
-              respective product websites and are subject to change. We will
-              provide at least thirty (30) days&apos; advance notice of any price
-              increases to existing subscribers.
+              Access to GenPlatform services may require payment. Each product
+              uses a different payment model and processor suited to its
+              platform and use case. By using any paid feature, you agree to the
+              applicable payment terms below.
             </p>
 
             <h3 className="text-base font-semibold text-text-primary mt-6 mb-3">
-              6.2 Payment Processing
+              6.2 GenNote — Mobile App Purchases
             </h3>
             <p>
-              All payments are processed through{" "}
+              GenNote is a mobile application available on Android. All
+              purchases, subscriptions, and in-app transactions for GenNote are
+              processed exclusively through{" "}
+              <strong className="text-text-primary">
+                Google Play In-App Purchases
+              </strong>
+              . By purchasing a subscription or any in-app feature, you agree to
+              be bound by Google Play&apos;s Terms of Service and payment policies.
+              GenPlatform does not directly process, store, or have access to
+              your payment card or mobile money details for GenNote
+              transactions. All billing inquiries, subscription management,
+              cancellations, and refund requests for GenNote must be handled
+              through the Google Play Store. Google Play&apos;s refund policies
+              apply. GenPlatform has no ability to issue refunds for
+              transactions processed through Google Play.
+            </p>
+
+            <h3 className="text-base font-semibold text-text-primary mt-6 mb-3">
+              6.3 GenSchool — Institutional Payments via Paystack
+            </h3>
+            <p>
+              GenSchool facilitates the collection of school fees, levies, and
+              other institutional charges from parents and guardians on behalf
+              of educational institutions. All payments within GenSchool —
+              including school fee payments, subscription fees for the
+              institution, and any other financial transactions — are processed
+              through{" "}
               <strong className="text-text-primary">Paystack</strong>, a
-              third-party payment processor. By providing payment information,
-              you authorize Paystack to charge the applicable fees to your
-              designated payment method. GenPlatform does not directly store your
-              full credit card, debit card, or mobile money credentials. All
-              payment data is handled in accordance with Paystack&apos;s security
-              standards and PCI DSS compliance requirements.
+              third-party payment processor. By making a payment through
+              GenSchool, you authorize Paystack to charge the applicable amount
+              to your designated payment method (credit card, debit card, mobile
+              money, or bank transfer). GenPlatform does not directly store your
+              full payment credentials. All payment data is handled in
+              accordance with Paystack&apos;s security standards and PCI DSS
+              compliance requirements. Institutional subscription fees are
+              billed on a recurring basis (monthly or annually). School fee
+              payments are processed as one-time transactions on behalf of the
+              institution.
             </p>
 
             <h3 className="text-base font-semibold text-text-primary mt-6 mb-3">
-              6.3 Billing Cycle and Renewal
+              6.4 GenGuard — Micro-Transaction Model
             </h3>
             <p>
-              Subscriptions are billed in advance on a recurring basis (monthly
-              or annually, depending on your selected plan). Your subscription
-              will automatically renew at the end of each billing cycle unless
-              you cancel before the renewal date. Cancellation takes effect at
-              the end of the current billing period; no pro-rated refunds are
-              provided for partial periods.
+              GenGuard operates on a pay-per-use micro-transaction model. Users
+              are charged for the following services:
+            </p>
+            <ul className="mt-3 space-y-2">
+              <li className="flex items-start gap-2">
+                <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-brand-guard flex-shrink-0" />
+                <span>
+                  <strong className="text-text-primary">
+                    KYC Name Verification:
+                  </strong>{" "}
+                  When a user submits a phone number for verification and
+                  chooses to compare the registered name against the name of a
+                  person they intend to transact with, a micro-transaction fee
+                  is charged for the KYC lookup.
+                </span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-brand-guard flex-shrink-0" />
+                <span>
+                  <strong className="text-text-primary">
+                    Receipt Fraud Scanning:
+                  </strong>{" "}
+                  When a user submits a transaction receipt for AI-powered fraud
+                  analysis and authenticity verification, a micro-transaction
+                  fee is charged per receipt scanned.
+                </span>
+              </li>
+            </ul>
+            <p className="mt-4">
+              GenGuard micro-transaction fees are deducted from a prepaid wallet
+              balance or charged directly per transaction via Paystack. Pricing
+              for each service is displayed within the GenGuard interface before
+              confirmation. By confirming a transaction, you authorize the
+              applicable charge. Micro-transaction fees are non-refundable once
+              the verification or scan has been processed and results have been
+              delivered.
             </p>
 
             <h3 className="text-base font-semibold text-text-primary mt-6 mb-3">
-              6.4 Failed Payments
+              6.5 General Billing Terms
             </h3>
-            <p>
-              If a payment fails, we will attempt to process the charge up to
-              three (3) additional times over a period of ten (10) days. If
-              payment remains unsuccessful, your account may be downgraded to a
-              free tier (where available) or suspended until the outstanding
-              balance is resolved.
-            </p>
-
-            <h3 className="text-base font-semibold text-text-primary mt-6 mb-3">
-              6.5 Refunds
-            </h3>
-            <p>
-              Refund requests are handled on a case-by-case basis. To request a
-              refund, contact us at{" "}
-              <a
-                href="mailto:admin@genplatform.io"
-                className="text-brand-school hover:underline"
-              >
-                admin@genplatform.io
-              </a>{" "}
-              within fourteen (14) days of the charge. Refunds are not available
-              for partially used billing periods or for services that have been
-              materially consumed.
-            </p>
+            <ul className="space-y-2">
+              {[
+                "All prices are quoted in the currency displayed at the point of purchase and are inclusive of applicable taxes unless otherwise stated.",
+                "We reserve the right to change pricing at any time. For recurring subscriptions, we will provide at least thirty (30) days' advance notice of any price increases to existing subscribers.",
+                "If a recurring payment fails, we will attempt to process the charge up to three (3) additional times over a period of ten (10) days. If payment remains unsuccessful, your account may be downgraded or suspended until the outstanding balance is resolved.",
+                "For GenSchool and GenGuard transactions processed via Paystack, refund requests are handled on a case-by-case basis. Contact admin@genplatform.io within fourteen (14) days of the charge.",
+                "For GenNote transactions processed via Google Play, all refund requests must be submitted through the Google Play Store in accordance with Google's refund policies.",
+              ].map((item, i) => (
+                <li key={i} className="flex items-start gap-2">
+                  <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-text-tertiary flex-shrink-0" />
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
           </section>
 
           {/* 7 */}

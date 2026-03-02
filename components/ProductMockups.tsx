@@ -64,7 +64,7 @@ export function GuardChat() {
           </div>
           <div className="flex justify-end">
             <div className="bg-[#005c4b] rounded-lg rounded-tr-sm px-3 py-2 max-w-[220px] shadow-sm">
-              <p className="text-[13px] text-text-primary leading-relaxed">Verify +233 54 555 1234</p>
+              <p className="text-[13px] text-text-primary leading-relaxed">Verify +1 (555) 153-9678</p>
               <div className="flex items-center justify-end gap-1 mt-0.5">
                 <span className="text-[10px] text-emerald-300/60">9:41</span>
                 <CheckCheck className="w-3.5 h-3.5 text-emerald-300/60" />
