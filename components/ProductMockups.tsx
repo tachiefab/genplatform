@@ -140,7 +140,7 @@ export function SchoolDashboard() {
               <div className="w-2.5 h-2.5 rounded-full bg-brand-school/30 flex items-center justify-center">
                 <div className="w-1 h-1 rounded-full bg-brand-school" />
               </div>
-              genschool.app/dashboard
+              {/* genschool.app/dashboard */}
             </div>
           </div>
           <div className="w-10" />
